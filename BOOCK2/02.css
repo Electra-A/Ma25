@@ -1,0 +1,111 @@
+body
+{
+    background: url(athens0.jpg);
+    background-size: cover;
+}
+.wrapper
+{
+    margin: 150px 300px;
+    -webkit-perspective: 1500px;
+    padding-left: 180px;
+}
+.num-area a
+{
+    display: flex;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+    
+}
+.num-area
+{
+    animation: animate 7s linear infinite;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 180px 0 0;
+}
+.num-area div img
+{
+
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background: #262626;
+
+
+    display: inline-block;
+    height: 350px;
+    width: 350px;
+    background: #fff;
+    border: 6px solid blueviolet;
+    border-radius: 40px ;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -70px;
+}
+/*img
+{
+    color: #000;
+    font-size: 160px;
+    margin-top: 10px;
+    margin-left: 60px;
+}*/
+.num-area div:nth-child(1)
+{
+    transform: rotateY(0deg) translateX(180px);
+    padding: 0 0 0 150px;
+}
+.num-area div:nth-child(2)
+{
+    transform: rotateY(-72deg) translateX(180px);
+    padding: 0 0 0 150px;
+}
+.num-area div:nth-child(3)
+{
+    transform: rotateY(-144deg) translateX(180px);
+    padding: 0 0 0 150px;
+}
+.num-area div:nth-child(4)
+{
+    transform: rotateY(-216deg) translateX(180px);
+    padding: 0 0 0 150px;
+}
+.num-area div:nth-child(5)
+{
+    transform: rotateY(-288deg) translateX(180px);
+    padding: 0 0 0 150px;
+}
+/*.num-area div:nth-child(6)
+{
+    transform: rotateY(72deg) translateX(180px);
+    padding: 0 0 0 150px;
+}
+.num-area div:nth-child(7)
+{
+    transform: rotateY(144deg) translateX(180px);
+    padding: 0 0 0 150px;
+}
+.num-area div:nth-child(8)
+{
+    transform: rotateY(216deg) translateX(180px);
+    padding: 0 0 0 150px;
+}
+.num-area div:nth-child(9)
+{
+    transform: rotateY(288deg) translateX(180px);
+    padding: 0 0 0 150px;
+}*/
+@keyframes animate
+{
+    from
+    {
+        transform: rotateY(0deg);
+    }
+    to
+    {
+        transform: rotateY(-360deg);
+    }
+}
+.num-area:hover
+{
+    animation-play-state: paused;
+}
